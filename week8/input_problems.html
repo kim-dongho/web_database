@@ -1,0 +1,81 @@
+<html>
+   <head>
+        <title>PBL 문제 개발 입력 Form</title>
+        <META name='Author' content='김동호'>
+        <META name='keyword' content='문제개발내용'>
+   </head>
+   <body bgcolor = "BlanchedAlmond">
+      <form action="input_problems.php" method="post">
+         <table border="1" width="700" hspace="100">
+               <tr>
+                 <td colspan=4 align=center>
+                     <font size=15 color=Tomato><strong>PBL 문제 개발 입력 Form</strong></font>
+                 </td>
+               </tr>
+               <tr>
+                 <td width="100"><center>학과</center></td>
+                 <td><input type="text" width="200" name="department"></td>
+                 <td width="100"><center>전공</center></td>
+	             <td><input type="text" width="200" name="major"></td>
+               </tr>
+               <tr>
+                 <td width="100"><center>문제개발자</center></td>
+                 <td><input type="text" width="200" name="question_developer"></td>
+                 <td width="100"><center>교과목명</center></td>
+	             <td><input type="text" width="200" name="course_title"></td>
+               </tr>
+               <tr>
+                 <td width="100"><center>대상학년</center></td>
+                 <td><input type="text" width="200" name="target_grade"></td>
+                 <td width="100"><center>과목속성</center></td>
+                 <td>
+                   <center>
+                     <input type="radio" name="class" value="1"><tt>전공</tt>
+                     <input type="radio" name="class" value="2"><tt>교양</tt>
+                    </center>
+                  </td>
+               </tr>
+                <tr>
+                   <td width="100"><center>문제 개발</center></td>
+                   <td>
+                     <input type="text" name="year1">년
+                     <input type="text" name="month1">월
+                     <input type="text" name="day1">일
+                   </td>
+                   <td width="100"><center>문제 수정</center></td>
+                   <td>
+                     <input type="text" name="year2">년
+                     <input type="text" name="month2">월
+                     <input type="text" name="day2">일
+                   </td>
+                </tr>
+                <tr>
+                   <td colspan=1 align=center>문제에서 다룰 주요 내용   <sub>(개념,원리,절차 등)</sub></td>
+                   <td colspan=3>
+                      <textarea name="contents" rows=6 cols=76></textarea>
+                   </td>
+                </tr>
+                <tr>
+                   <td colspan=1 align=center>학습 목표</td>
+                   <td colspan=3>
+                      <textarea name="goal" rows=6 cols=76></textarea>
+                   </td>
+                </tr>
+                <tr>
+                   <td colspan=1 align=center>문제명</td>
+                   <td colspan=3>
+                      <textarea name="question_name"rows=2 cols=76></textarea>
+                   </td>
+                </tr>
+                <tr>
+                   <td colspan=1 align=center>문제</td>
+                   <td colspan=3>
+                      <textarea name="question" rows=17 cols=76></textarea>
+                   </td>
+                </tr>
+         </table>
+      <input type="submit" value="입력" width="200" align="center">
+      <input type="reset" value="취소" align="center">
+      </form>
+   </body>
+</html>
