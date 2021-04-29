@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="page.css" type="text/css" />
+  </head>
+  <body>
+    <nav>
+		<p>
+			<img src = 'logo.png'>
+		</p>
+		<ul id="navigat">
+			<li onclick="window.open('','mywin')">ㅡ HOME</li><br>
+			<li onclick="window.open('','mywin')">ㅡ 학적 관리</li><br>
+			<li onclick="window.open('','mywin')">ㅡ 성적 조회</li><br>
+            <li onclick="window.open('','mywin')">ㅡ 0원 등록 신청</li><br>
+			<li onclick="window.open('','mywin')">ㅡ 등록 내역 조회</li><br>
+            <li onclick="window.open('','mywin')">ㅡ 휴·복학 신청</li><br>
+			<li onclick="window.open('','mywin')">ㅡ 수강 계획서 조회</li><br>
+		</ul>
+    </nav>
+    <section>
+      <div id="wrap">
+        <div id="search">
+          > 휴 · 복학 신청 <input type="submit" value="조회" id="sub" /><br />
+          <div id="search_data">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 학번
+            <input type="text" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 이름
+            <input type="text" />
+          </div>
+        </div>
+        <div id="info">
+          - 학생 정보<br />
+          <div id="info_data">
+            <table id="table1">
+              <tr>
+                <td>학번</td>
+                <td><input type="text" /></td>
+                <td>성명</td>
+                <td><input type="text" /></td>
+                <td>학년</td>
+                <td><input type="text" /></td>
+              </tr>
+              <tr>
+                <td>대학</td>
+                <td><input type="text" /></td>
+                <td>학과</td>
+                <td><input type="text" /></td>
+                <td>전공</td>
+                <td><input type="text" /></td>
+              </tr>
+              <tr>
+                <td>년도</td>
+                <td><input type="text" /></td>
+                <td>학기</td>
+                <td><input type="text" /></td>
+                <td>학적상태</td>
+                <td><input type="text" /></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div id="leave">
+          - 휴학 신청
+          <div id="leave_data">
+            <table id="table2">
+              <tr>
+                <td colspan="4">
+                  <input type="radio" name="1" value="군휴학" />군휴학
+                  <input type="radio" name="1" value="일반휴학" />일반휴학
+                </td>
+                <td>신청 사유</td>
+                <td><input type="text" /></td>
+              </tr>
+              <tr>
+                <td>신청 일자</td>
+                <td><input type="text" /></td>
+                <td>주소</td>
+                <td><input type="text" /></td>
+                <td>학적 상태</td>
+                <td><input type="text" /></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div id="return">
+          - 휴학 신청
+          <div id="return_data">
+            <table id="table3">
+              <tr>
+                <td colspan="4">
+                  <input type="radio" name="1" value="군복학" />군복학
+                  <input type="radio" name="1" value="일반복학" />일반복학
+                </td>
+                <td>신청 사유</td>
+                <td><input type="text" /></td>
+              </tr>
+              <tr>
+                <td>신청 일자</td>
+                <td><input type="text" /></td>
+                <td>주소</td>
+                <td><input type="text" /></td>
+                <td>학적 상태</td>
+                <td><input type="text" /></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
